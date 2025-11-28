@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>100SMILES Dental Care | Book an Appointment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-mark">100</span><span class="logo-text">SMILES Dental Care</span>
+        </a>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="Team.html">Our Team</a>
+            <a href="articles.html">Articles</a>
+            <a href="booking.html" class="btn-nav active">Book Online</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <h1>Online Booking</h1>
+            <p>
+                Use this form to request an appointment for yourself or a family member. We will contact
+                you to confirm the exact time.
+            </p>
+            <p class="hero-offer">
+                ✔ Book online to receive a <strong>25% discount</strong> on your next visit.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container booking-layout">
+            <div class="booking-main">
+                <h2>Booking Form</h2>
+
+                <!-- JS-Handled Form -->
+                <form id="booking-form" novalidate>
+
+                    <div class="form-row">
+                        <label for="full-name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="full-name" name="full-name">
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="e.g. 07 5000 5599">
+                    </div>
+
+                    <div class="form-row form-row-inline">
+                        <div>
+                            <label for="appointment-date">Preferred Date <span class="required">*</span></label>
+                            <input type="date" id="appointment-date" name="appointment-date">
+                            <span class="error-message" id="date-error"></span>
+                        </div>
+
+                        <div>
+                            <label for="appointment-time">Preferred Time</label>
+                            <input type="time" id="appointment-time" name="appointment-time">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="service">Service Type <span class="required">*</span></label>
+                        <select id="service" name="service">
+                            <option value="">-- Please select --</option>
+                            <option value="Annual Dental Check-Up">Annual Dental Check-Up</option>
+                            <option value="Routine Check-Up & Cleaning">Routine Check-Up & Cleaning</option>
+                            <option value="Children's Dentistry">Children's Dentistry</option>
+                            <option value="Dental Implants">Dental Implants</option>
+                            <option value="Orthodontics">Orthodontics</option>
+                            <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+                            <option value="Root Canal Treatment">Root Canal Treatment</option>
+                            <option value="Emergency Care">Emergency Care</option>
+                        </select>
+                        <span class="error-message" id="service-error"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="preferred-dentist">Preferred Dentist (optional)</label>
+                        <select id="preferred-dentist" name="preferred-dentist">
+                            <option value="">No preference</option>
+                            <option value="Dr Johanna Grey">Dr Johanna Grey</option>
+                            <option value="Dr Emily Carter">Dr Emily Carter</option>
+                            <option value="Dr Benedict Sloan">Dr Benedict Sloan</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="comments">Additional Information</label>
+                        <textarea id="comments" name="comments" rows="4" placeholder="Tell us about any concerns or special requirements."></textarea>
+                    </div>
+
+                    <div class="form-row form-row-checkbox">
+                        <label>
+                            <input type="checkbox" id="agree-terms" name="agree-terms">
+                            I confirm that this information is accurate to the best of my knowledge.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Submit Booking Request</button>
+
+                </form>
+            </div>
+
+            <aside class="booking-aside">
+                <h2>Need help?</h2>
+                <p>You can also book by phone.</p>
+                <p><strong>Main clinic phone:</strong> 07 5000 5599</p>
+                <p><strong>Free checkup booking line:</strong> 07 1327 5599</p>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-bottom">
+        <p>&copy; 2025 100SMILES Dental Care. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Only load script.js -->
+<script src="script.js"></script>
+
+</body>
+</html>
